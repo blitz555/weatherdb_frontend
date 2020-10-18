@@ -1,0 +1,6 @@
+<app-page-header [content]="pageContent.header"></app-page-header>
+<div class="row">
+  <div class="col-12">
+    <app-city-details *ngIf="newCity" [city]="newCity"></app-city-details>
+  </div>
+</div>

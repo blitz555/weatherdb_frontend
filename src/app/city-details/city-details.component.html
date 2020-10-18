@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card card-primary">
+      <p>
+        Longitude, Latitude {{ city.coords.coordinates[0] }},
+        {{ city.coords.coordinates[1] }}
+      </p>
+      <p>
+        Last Update Time
+        {{ city.timestamp_current * 1000 | date: "d MMMM yyyy" }}
+      </p>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <h4>Temperature Graph</h4>
+  <app-graph-temp [city]="city"></app-graph-temp>
+</div>
+
+<div class="card">
+  <h4>Precipitation Graph</h4>
+  <app-graph-precip [city]="city"></app-graph-precip>
+</div>

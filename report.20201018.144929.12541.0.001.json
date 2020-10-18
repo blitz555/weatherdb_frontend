@@ -1,0 +1,352 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20201018.144929.12541.0.001.json",
+    "dumpEventTime": "2020-10-18T14:49:29Z",
+    "dumpEventTimeStamp": "1603032569890",
+    "processId": 12541,
+    "cwd": "/home/bitnami/webscraping/app_public",
+    "commandLine": [
+      "/opt/bitnami/nodejs/bin/.node.bin",
+      "--max_old_space_size=200",
+      "./node_modules/@angular/cli/bin/ng",
+      "build",
+      "--prod",
+      "--output-path",
+      "build"
+    ],
+    "nodejsVersion": "v12.16.1",
+    "glibcVersionRuntime": "2.23",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.16.1",
+      "v8": "7.8.279.23-node.31",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.4.0-1114-aws",
+    "osVersion": "#127-Ubuntu SMP Fri Sep 4 08:41:12 UTC 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz",
+        "speed": 2400,
+        "user": 38163700,
+        "nice": 820500,
+        "sys": 7220000,
+        "idle": 12584850900,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "02:3e:1c:b3:76:38",
+        "address": "172.26.13.207",
+        "netmask": "255.255.240.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "02:3e:1c:b3:76:38",
+        "address": "fe80::3e:1cff:feb3:7638",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      }
+    ],
+    "host": "ip-172-26-13-207"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b278f5",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x00000000009f13ec",
+      "symbol": "node::OnFatalError(char const*, char const*) [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x0000000000b5da9e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x0000000000b5de19",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x0000000000d0a765",
+      "symbol": " [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x0000000000d0adf6",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x0000000000d1760a",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x0000000000d18515",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x0000000000d1afcc",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x0000000000ce19bb",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x00000000010246ce",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [ng build --prod --output-path build]"
+    },
+    {
+      "pc": "0x00000000013a71b9",
+      "symbol": " [ng build --prod --output-path build]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 212373504,
+    "totalCommittedMemory": 210974624,
+    "usedMemory": 205717840,
+    "availableMemory": 2873616,
+    "memoryLimit": 212860928,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33088,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 1298672,
+        "capacity": 1047456,
+        "used": 284280,
+        "available": 763176
+      },
+      "old_space": {
+        "memorySize": 150880256,
+        "committedMemory": 150647024,
+        "capacity": 149361984,
+        "used": 148786424,
+        "available": 575560
+      },
+      "code_space": {
+        "memorySize": 1740800,
+        "committedMemory": 1603200,
+        "capacity": 1509440,
+        "used": 1509440,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 4984832,
+        "committedMemory": 4984320,
+        "capacity": 2880240,
+        "used": 2880240,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 51785728,
+        "committedMemory": 51785728,
+        "capacity": 51680104,
+        "used": 51680104,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 544544,
+        "used": 544544,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 14.516,
+    "kernelCpuSeconds": 0.516,
+    "cpuConsumptionPercent": 83.5111,
+    "maxRss": 286208000,
+    "pageFaults": {
+      "IORequired": 143,
+      "IONotRequired": 102697
+    },
+    "fsActivity": {
+      "reads": 188384,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 8.216,
+    "kernelCpuSeconds": 0.436,
+    "cpuConsumptionPercent": 48.0667,
+    "fsActivity": {
+      "reads": 186808,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "CURL_CA_BUNDLE": "/opt/bitnami/common/openssl/certs/curl-ca-bundle.crt",
+    "MAIL": "/var/mail/bitnami",
+    "SSH_CLIENT": "170.52.111.133 63876 22",
+    "USER": "bitnami",
+    "BITNAMI_ROOT": "/opt/bitnami",
+    "LANGUAGE": "en_US.UTF-8",
+    "GIT_TEMPLATE_DIR": "/opt/bitnami/git/share/git-core/templates",
+    "SASL_CONF_PATH": "/opt/bitnami/common/etc",
+    "FONTCONFIG_PATH": "/opt/bitnami/common/etc/fonts",
+    "GIT_EXEC_PATH": "/opt/bitnami/git/libexec/git-core/",
+    "SASL_PATH": "/opt/bitnami/common/lib/sasl2",
+    "CXXFLAGS": "-I/opt/bitnami/common/include ",
+    "MODE": "live",
+    "URL": "https://www.masksupply4all.com/",
+    "SHLVL": "1",
+    "LD_LIBRARY_PATH": "/opt/bitnami/redis/lib:/opt/bitnami/python/lib:/opt/bitnami/git/lib:/opt/bitnami/apache2/lib:/opt/bitnami/common/lib:/opt/bitnami/common/lib64",
+    "GIT_SSL_CAINFO": "/opt/bitnami/common/openssl/certs/curl-ca-bundle.crt",
+    "LDAPCONF": "/opt/bitnami/common/etc/openldap/ldap.conf",
+    "OLDPWD": "/home/bitnami/webscraping",
+    "HOME": "/home/bitnami",
+    "TERMINFO": "/opt/bitnami/common/share/terminfo",
+    "SSH_TTY": "/dev/pts/0",
+    "LDFLAGS": "-L/opt/bitnami/common/lib ",
+    "SSL_CERT_FILE": "/opt/bitnami/common/openssl/certs/curl-ca-bundle.crt",
+    "OPENSSL_ENGINES": "/opt/bitnami/common/lib/engines",
+    "LOGNAME": "bitnami",
+    "_": "/opt/bitnami/nodejs/bin/node",
+    "MAGICK_CONFIGURE_PATH": "/opt/bitnami/common/lib/ImageMagick-6.9.8/config-Q16:/opt/bitnami/common/",
+    "OPENSSL_CONF": "/opt/bitnami/common/openssl/openssl.cnf",
+    "PKG_CONFIG_PATH": "/opt/bitnami/common/lib64/pkgconfig:/opt/bitnami/common/lib/pkgconfig",
+    "XDG_SESSION_ID": "771",
+    "TERM": "xterm-256color",
+    "PATH": "/home/bitnami/bin:/home/bitnami/.local/bin:/opt/bitnami/redis/bin:/opt/bitnami/python/bin:/opt/bitnami/nodejs/bin:/opt/bitnami/git/bin:/opt/bitnami/letsencrypt/:/opt/bitnami/apache2/bin:/opt/bitnami/common/bin:/opt/bitnami/redis/bin:/opt/bitnami/python/bin:/opt/bitnami/nodejs/bin:/opt/bitnami/git/bin:/opt/bitnami/letsencrypt/:/opt/bitnami/apache2/bin:/opt/bitnami/common/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "CFLAGS": "-I/opt/bitnami/common/include/ImageMagick -I/opt/bitnami/common/include ",
+    "MAGICK_CODER_MODULE_PATH": "/opt/bitnami/common/lib/ImageMagick-6.9.8/modules-Q16/coders",
+    "LANG": "en_US.UTF-8",
+    "MAGICK_HOME": "/opt/bitnami/common",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "SHELL": "/bin/bash",
+    "NODE_PATH": "/opt/bitnami/nodejs/lib/node_modules",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "LC_ALL": "en_US.UTF-8",
+    "PWD": "/home/bitnami/webscraping/app_public",
+    "XDG_DATA_DIRS": "/usr/local/share:/usr/share:/var/lib/snapd/desktop",
+    "SSH_CONNECTION": "170.52.111.133 63876 172.26.13.207 22",
+    "BROWSERSLIST_IGNORE_OLD_DATA": "1",
+    "WEBPACK_DEV_SERVER": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 32768,
+      "hard": 32768
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}

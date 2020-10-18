@@ -1,0 +1,32 @@
+<div class="error"></div>
+<div class="card" *ngIf="city">
+  <div class="card-block">
+    <h4>
+      <row>
+        Nearest major city: {{ city.location }}
+        <!--<a routerLink="/location/{{ city._id }}"></a>-->
+        <span class="badge badge-pill badge-default float-right"
+          >distance: {{ city.distance.calculated | distance }}</span
+        >
+      </row>
+    </h4>
+    <row
+      >Full list of weather stats
+      <small *ngFor="let prop of city | keyvalue">
+        <span *ngIf="prop.key != 'distance'" class="badge badge-warning">{{
+          prop.key
+        }}</span>
+        |
+      </small>
+    </row>
+  </div>
+</div>
+<div class="card">
+  <h4>Temperature Graph</h4>
+  <app-graph-temp [city]="city"></app-graph-temp>
+</div>
+
+<div class="card">
+  <h4>Precipitation Graph</h4>
+  <app-graph-precip [city]="city"></app-graph-precip>
+</div>
