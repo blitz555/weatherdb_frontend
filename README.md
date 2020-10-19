@@ -1,27 +1,21 @@
-# Weatherdash
+## the WeatherDB - A weather database for cities around the world
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
+The WeatherDB is a data visualization application for historical weather data. New data is collected daily from a third-party API (AerisWeather) and saved in the data base. These statistics currently include daily max/min temperature, UV index, precipitation. This data visualization tool helps to identify trends in weather data due to climate change, which may be affecting some areas of the world differently from others. 
 
-## Development server
+### Features
+* World map of all cities in database; city name label appears when mouse moves over the circle it presents
+<p align="center">
+  <img src="demo.gif" width="800">
+</p>
+* Link to different weather data graphs for each city
+* Daily updates of weather data
 
+### Future work
+* Draggable world map in orthographic projection
+* Scrollbar to select interval to display
+* Comparison of multiple cities' data in one graph
+
+### Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
