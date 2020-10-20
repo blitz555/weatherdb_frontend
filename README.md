@@ -4,11 +4,12 @@ The WeatherDB is a data visualization application for historical weather data. N
 
 ### Features
 * World map of all cities in database; city name label appears when mouse moves over the circle it presents
+* Link to different weather data graphs for each city
+* Daily updates of weather data
 <p align="center">
   <img src="demo.gif" width="800">
 </p>
-* Link to different weather data graphs for each city
-* Daily updates of weather data
+
 
 ### Future work
 * Draggable world map in orthographic projection
