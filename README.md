@@ -8,7 +8,7 @@ The WeatherDB is a data visualization application for weather history and foreca
 * One tab for each weather statistic graph
 * Daily updates of weather data
 <p align="center">
-  <img src="demo.gif" width="800">
+  <img src="demo2.gif" width="800">
 </p>
 
 
