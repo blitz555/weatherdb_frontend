@@ -16,7 +16,9 @@ import { DetailsPageComponent } from './details-page/details-page.component';
 import { GraphTempComponent } from './graph-temp/graph-temp.component';
 import { GraphPrecipComponent } from './graph-precip/graph-precip.component';
 import { MapComponent } from './map/map.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSliderModule } from '@angular/material/slider';
 @NgModule({
   declarations: [
     CityListComponent,
@@ -33,7 +35,7 @@ import { MapComponent } from './map/map.component';
     GraphPrecipComponent,
     MapComponent,
   ],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule, BrowserAnimationsModule, MatTabsModule],
   providers: [],
   bootstrap: [FrameworkComponent],
 })

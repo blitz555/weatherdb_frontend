@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, AfterViewInit } from '@angular/core';
 import * as d3 from 'd3';
 import { City } from '../city';
 import { default as citydata } from '../citydata';
@@ -8,7 +8,7 @@ import { default as citydata } from '../citydata';
   templateUrl: './graph-temp.component.html',
   styleUrls: ['./graph-temp.component.css'],
 })
-export class GraphTempComponent implements OnInit {
+export class GraphTempComponent implements AfterViewInit {
   constructor() {}
 
   @Input() city: City;
@@ -18,7 +18,7 @@ export class GraphTempComponent implements OnInit {
   private width = 750 - this.margin * 2;
   private height = 400 - this.margin * 2;
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     if (this.city === undefined) {
       this.city = citydata;
     }

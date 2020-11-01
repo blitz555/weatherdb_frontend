@@ -27,7 +27,6 @@ export class DetailsPageComponent implements OnInit {
       .subscribe((newCity: City) => {
         this.newCity = newCity;
         this.pageContent.header.title = newCity.location;
-        console.log(this.newCity);
       });
   }
 

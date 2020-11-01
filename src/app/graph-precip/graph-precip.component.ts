@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, AfterViewInit } from '@angular/core';
 import * as d3 from 'd3';
 import { City } from '../city';
 import { default as citydata } from '../citydata';
@@ -8,7 +8,7 @@ import { default as citydata } from '../citydata';
   templateUrl: './graph-precip.component.html',
   styleUrls: ['./graph-precip.component.css'],
 })
-export class GraphPrecipComponent implements OnInit {
+export class GraphPrecipComponent implements AfterViewInit {
   constructor() {}
 
   @Input() city: City;
@@ -18,7 +18,7 @@ export class GraphPrecipComponent implements OnInit {
   private width = 750 - (this.margin.left + this.margin.right);
   private height = 500 - (this.margin.top + this.margin.bottom);
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     if (this.city === undefined) {
       this.city = citydata;
     }

@@ -1,10 +1,11 @@
 ## the WeatherDB - A weather database for cities around the world
 
-The WeatherDB is a data visualization application for historical weather data. New data is collected daily from a third-party API (AerisWeather) and saved in the data base. These statistics currently include daily max/min temperature, UV index, precipitation. This data visualization tool helps to identify trends in weather data due to climate change, which may be affecting some areas of the world differently from others. 
+The WeatherDB is a data visualization application for weather history and forecast data. New data is collected daily from a third-party API (AerisWeather) and saved in the database. These statistics currently include daily max/min temperature, UV index, precipitation. This data visualization tool helps to identify trends in weather data due to climate change, which may be affecting some areas of the world differently from others. The same graphs can be used to visualize other time-series data.
 
 ### Features
 * World map of all cities in database; city name label appears when mouse moves over the circle it presents
-* Link to different weather data graphs for each city
+* Link to different weather data for each city
+* One tab for each weather statistic graph
 * Daily updates of weather data
 <p align="center">
   <img src="demo.gif" width="800">
