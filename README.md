@@ -19,5 +19,5 @@ The WeatherDB is a data visualization application for weather history and foreca
 * Scrollbar to select date interval to display
 
 ### Development server
-Note: publically available source is not the version running on web server (www.theweatherdb.com).
+Note: publicly available source is not the version running on web server (www.theweatherdb.com).
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
